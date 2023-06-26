@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from './Comp/Header';
 import './App.css';
 import Body from './Comp/body';
+import PubSub from 'pubsub-js';
 
 function App() {
 
@@ -15,11 +16,14 @@ function App() {
     "status": "Running"
   }
 
+  useEffect(() => {
+    PubSub.publish('mockData', mockData);
+  }, []);
 
   return (
     <div className='app-container'>
      <Header className="app-header"/>
-     <Body className="app-body" data={mockData}/>
+     <Body className="app-body"/>
     </div>
   );
 }

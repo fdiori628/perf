@@ -9,7 +9,7 @@ const items1 = ['HOME', 'CONFIG', 'REPORT', 'HISTORY'].map((key) => ({
   label: `${key}`
 }));
 
-const App = (props) => { 
+const App = () => { 
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -39,7 +39,7 @@ const App = (props) => {
             background: colorBgContainer,
           }}
         >
-          <Home data={props.data}/>
+          <Home />
         </Content>
       </Layout>
     </Layout>

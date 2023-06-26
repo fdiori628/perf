@@ -6,7 +6,7 @@ export default class Body extends Component {
   render() {
     return (
       <div>
-        <Container data={this.props.data}/>
+        <Container />
       </div>
     )
   }
