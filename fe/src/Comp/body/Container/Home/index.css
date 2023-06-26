@@ -1,0 +1,29 @@
+.Home-container {
+    width: 600px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: rgba(34, 0, 255, 0.351);
+
+}
+
+p {
+    /* style={{fontSize: '11px', color: 'blue', marginTop: "5px"}} */
+    font-size: 11px;
+    color: blue;
+    margin-top: 5px;
+}
+
+.home-info {
+    /* style={{fontSize: '15px', color: 'blue', marginTop: "5px", }} */
+    font-size: 15px;
+    color: blue;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.home-info div {
+    margin-top: 10px;
+}
